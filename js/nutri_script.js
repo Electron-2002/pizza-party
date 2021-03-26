@@ -154,11 +154,13 @@ function display(ans, energy, protein, fat, carbs) {
   document.getElementById("selected-carbs").setAttribute("value", carbs);
 
   document.getElementById("master").style.setProperty("filter", "blur(10px)");
+  document.getElementById("footer-parent").style.setProperty("filter", "blur(10px)");
   document.getElementById("popup").style.setProperty("display", "block");
 }
 
 function close_popup() {
   document.getElementById("master").style.setProperty("filter", "blur(0px)");
+  document.getElementById("footer-parent").style.setProperty("filter", "blur(0px)");
   document.getElementById("popup").style.setProperty("display", "none");
   document.getElementById("slider").value = 100;
   document.getElementById("slider-value").innerHTML = 100 + "g";
