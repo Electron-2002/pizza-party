@@ -290,6 +290,7 @@ function add_list() {
 
   table.html(resultHtml);
   document.getElementById("master").style.setProperty("filter", "blur(0px)");
+  document.getElementById("footer-parent").style.setProperty("filter", "blur(0px)");
   document.getElementById("popup").style.setProperty("display", "none");
 
   val = document.getElementById("slider").value / 100;
