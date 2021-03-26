@@ -2,20 +2,17 @@
 * {
   margin: 0;
   box-sizing: border-box;
-
 }
-
-
 
 :root {
   --fetch-text: "hello";
 }
 
-body{
-  background-color: #1d1d1d;;
+body {
+  background-color: #1d1d1d;
 }
 
-.testing{
+.testing {
   background-color: #00000000;
   color: #ffffff;
   border: 2px solid #0d8f8f;
@@ -48,7 +45,6 @@ body{
   width: 100%;
   background-color: #0d8f8f00;
   margin-top: -10px;
-
 }
 
 .search-param {
@@ -86,31 +82,31 @@ body{
   display: none;
   width: 30%;
   min-width: 400px;
-  height: 500px;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   padding: 20px;
   border: 2px solid #0d8f8f;
   border-radius: 20px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  z-index: 999;
 }
 
 .selected {
   background-color: #ffffff00;
   color: #0d8f8f;
   width: 100%;
-  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   position: relative;
   border-radius: 10px;
   border: 2px solid #0d8f8f;
   font-size: 25px;
   font-weight: bold;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 10px;
 }
 
@@ -121,7 +117,6 @@ body{
   background-color: #ffffff00;
   justify-content: flex-end;
   align-items: center;
-
 }
 
 #close-popup {
@@ -294,7 +289,7 @@ body{
   align-items: center;
 }
 
-.master{
+.master {
   background-color: #1d1d1d;
   padding: 50px;
 }
@@ -304,19 +299,18 @@ body{
   background-color: #1b1b1b;
   border: 2px solid #0d8f8f;
   border-top-left-radius: 10px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.list-master{
+.list-master {
   background-color: #1b1b1b;
   border: 2px solid #0d8f8f;
   border-top-right-radius: 10px;
   overflow: auto;
-  font-family: 'Ubuntu', sans-serif;
-
+  font-family: "Ubuntu", sans-serif;
 }
 
-.progress-master{
+.progress-master {
   background-color: #1b1b1b;
   border: 2px solid #0d8f8f;
   border-bottom-left-radius: 10px;
@@ -418,7 +412,7 @@ body{
 }
 
 /* progrss circle styling */
-.flex-parent{
+.flex-parent {
   /* display: flex; */
   background-color: #0d8f8f;
   width: 100%;
@@ -574,7 +568,6 @@ footer {
 }
 
 .footer-bottom {
-
   background: black;
   width: 100%;
   padding: 20px 0;
@@ -591,13 +584,13 @@ footer {
   font-weight: 800;
 }
 
-.footer-parent{
+.footer-parent {
   position: relative;
 }
 
 /* navbar styling */
 
-.navbar-parent{
+.navbar-parent {
   background-color: #ffffff00;
   width: 100%;
   height: 150px;
@@ -626,7 +619,7 @@ footer {
 .logo {
   font-size: 50px;
   color: #0d8f8f;
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
   transition: 0.4s;
 }
 
@@ -643,7 +636,7 @@ footer {
   margin-top: 15px;
   transition: 0.5s;
   display: block;
-  font-family: 'Architects Daughter', cursive;
+  font-family: "Architects Daughter", cursive;
   font-size: 35px;
 }
 
@@ -652,7 +645,6 @@ footer {
   transform: scale(1.1);
   text-decoration: none;
 }
-
 
 .navbar.sticky .menu li a {
   color: #ffffff;
@@ -669,7 +661,6 @@ footer {
 }
 
 @media (max-width: 950px) {
-
   .nav-mxw {
     padding: 0 70px;
   }
@@ -712,5 +703,4 @@ footer {
     font-size: 35px !important;
     color: #ffffff;
   }
-
 }
