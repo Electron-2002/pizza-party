@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#1d1d1d;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none !important;
+}
+
+
+/* navbar */
+.navbar-parent {
+  background-color:rgba(0, 255, 255, 0);
+  width: 100%;
+  height: 150px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: 0.4s;
+  z-index: 99;
+}
+.navbar.sticky {
+  padding: 10px 0;
+  background: #0d8f8f;
+}
+.nav-mxw {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin: auto;
+  width: 100%;
+}
+.logo {
+  font-size: 50px;
+  color: #0d8f8f;
+  /* font-family: "Big Shoulders Stencil Text", cursive; */
+  font-family: 'Kaushan Script', cursive;
+  /* font-family: 'Train One', cursive; */
+  transition: 0.4s;
+}
+
+.navbar.sticky .logo {
+  color: #ffffff;
+}
+.menu li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+.menu li a {
+  color: #0d8f8f;
+  transition: 0.5s;
+  display: block;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 35px;
+
+}
+
+.menu li a:hover {
+  transform: scale(1.1);
+}
+
+.navbar.sticky .menu li a {
+  color: #ffffff;
+}
+.navbar.sticky .menu li span {
+  color: #ffffff;
+}
+/* menu button for responsiveness*/
+.menu-button {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 25px;
+  display: none;
+}
+
+
+
+.column {
+  float: right;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 5px;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+}
+
+.card-parent{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.card-master{
+  width: 500px;
+  min-width: 400px;
+  height: 500px; 
+  margin: 50px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid #0d8f8f;
+  background-color:#1d1d1d;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+
+.container {
+  padding: 20px;
+}
+.container h2, .container p{
+  color: #0d8f8f;
+}
+
+.links{
+  width: 100%;
+  height: 150px;
+  background-color: #0d8f8f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 50px;
+
+}
+
+.sm{
+  margin: 20px;
+  transition: 1s;
+}
+
+.sm:hover{
+  transform: scale(1.1);
+}
+
+.img-master{
+  width: 100%;
+  height: 30%;
+  background-color: #0d8f8f1f;
+  overflow: hidden;
+}
+
+.title {
+  color: #ffffff !important ;
+  font-style: italic;
+}
+
+/* footer styling */
+
+footer {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  background: black;
+  height: 200px;
+  width: 100%;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: white;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  margin-bottom: 0;
+  line-height: 28px;
+  font-size: 18px;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: white;
+}
+.socials a i {
+  font-size: 2rem;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: #0d8f8f;
+}
+
+.footer-bottom {
+  background: black;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.6;
+  font-weight: 800;
+}
+
+.footer-parent{
+  position: relative;
+}
+
+
+
+@media (max-width: 950px) {
+
+  .nav-mxw {
+    padding: 0 70px;
+  }
+  .content-home {
+    top: 30%;
+  }
+  .menu-button {
+    display: block;
+    z-index: 99;
+  }
+  .navbar.sticky .menu li a:hover {
+    color: #0d8f8f;
+  }
+
+  .menu li a{
+    color: #ffffff ;
+    font-size: 35px !important;
+  }
+
+  .menu li a:hover{
+    color: #0d8f8f;
+  }
+
+  .menu-button i.active::before {
+    content: "\f00d";
+  }
+  .menu {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    right: -100%;
+    top: 0;
+    background: #1d1d1d;
+    text-align: center;
+    padding-top: 75px;
+    transition: 1s;
+  }
+  .menu.active {
+    right: 0;
+  }
+  .menu li {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+  .menu li a {
+    display: inline-block;
+    margin: 4vh 0;
+    font-size: 25px;
+  }
+
+}
+
